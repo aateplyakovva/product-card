@@ -1,3 +1,3 @@
 # Карточка продукта с использованием JS
-## Ссылка
->
+## Ссылка:
+>https://aateplyakovva.github.io/product-card/

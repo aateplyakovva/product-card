@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <img class="image" src="/img/bicycle.jpg" alt="">
+        <div class="description">
+            <div class="title">Aist</div>
+            <div class="subtitle">Quest W 26</div>
+            <div class="price"><sup>$</sup>350</div>
+            <div class="button-wrapper">
+                <div id="btnWrapper" data-action="add">Add to cart</div>
+                <img id="heart" src="/img/heart.png" data-action="addFavorites">
+            </div>
+        </div>
+
+    </div>
+    <div id="button-open-form" data-action="openForm">Create</div>
+    <div class="popupWrapper" id="popup">
+        <div id="popup" class="popup">
+            <div class="popupHeader"></div>
+            <div class="popupButtons">
+                <div class="btn primary" onclick="togglePopup()">OK</div>
+                <div class="btn secondary" onclick="togglePopup()">Cancel</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="formWrapper" id="form">
+        <form class="form" id="form">
+            <img src="/img/error.svg" class="close" id="close">
+            <label for="img">Image</label>
+            <input type="url" id="img" value="https://aist-bike.by/wp-content/uploads/2019/04/AIST-Quest-W_white.jpg">
+
+            <label for="title">Title</label>
+            <input type="text" id="title" value="Title">
+
+            <label for="description">Description</label>
+            <textarea name="" id="description"
+                rows="10">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</textarea>
+
+            <label for="price">Price</label>
+            <input type="text" id="price" value="350$">
+
+            <input type="submit" value="Create" id="submit">
+
+        </form>
+    </div>
+    <div class="otherCardWrapper"></div>
+</body>
+<script src="/js/script.js"></script>
+
+</html>
